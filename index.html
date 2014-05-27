@@ -71,11 +71,11 @@
 	<div class="columns">
 		<div class="spaced">
 			<h1>Cos'&egrave; Musilieu</h1>
-			<p class="large">MUSILIEU è un luogo speciale dove vivere l'esperienza della musica in modo autentico; è un percorso per apprendere il linguaggio musicale fin dai primi mesi di vita, seguiti con cura e competenza da educatori-musicisti appassionati del proprio lavoro; MUSILIEU è fondato da Federica Braga e Claudia Veronese, Insegnanti Accreditate Audiation Institute che da anni a Milano coltivano nei loro piccoli allievi e nelle loro famiglie l'amore per la musica, sotto il segno distintivo della MLT di Gordon.</p>
+			<p class="large">MUSILIEU è un luogo speciale dove vivere l'esperienza della musica in modo autentico; è un percorso per apprendere il linguaggio musicale fin dai primi mesi di vita, seguiti con cura e competenza da educatori-musicisti appassionati del proprio lavoro; MUSILIEU è fondato da Federica Braga e Claudia Veronese, Insegnanti Accreditate <a href="http://www.audiationinstitute.org" class="blank">Audiation Institute</a> che da anni a Milano coltivano nei loro piccoli allievi e nelle loro famiglie l'amore per la musica, sotto il segno distintivo della MLT di Gordon.</p>
 		</div>
 		<blockquote>
 			<div class="quotes top"></div>
-			<p>Immaginiamo un presente in cui la musica e l'arte in generale sono a portata di bambino e avremo un mondo più bello da ascoltare, guardare e toccare.</p>
+			<p>Immaginiamo un mondo più bello da ascoltare, guardare e toccare; un presente in cui la Musica e l'arte in generale siano a misura di bambino.</p>
 			<span class="author">Federica e Claudia<span class="role">Fondatrici Musilieu</span></span>
 			<div class="quotes bottom"></div>
 		</blockquote>
@@ -125,13 +125,25 @@
 			<ul class="small-block-grid-2 medium-block-grid-1">
 								<li>
 					<h4 style="color: #750099">Il germoglio</h4>
-					<p class="indirizzo"><i class="fa fa-map-marker"></i>Via Lanzone 6</p>
+					<p class="indirizzo"><i class="fa fa-map-marker"></i>Via Lanzone 53</p>
 					<p class="trasporto"><i class="icon icon-bus"></i>(MM2 St. Ambrogio)</p>
 					<div class="corsi">
 						<ul class="inline-list">
 														<li><i class="icon icon-0-3 " title="Musilieu 0-3"></i></li>
 														<li><i class="icon icon-3-6 " title="Musilieu 3-6"></i></li>
 														<li><i class="icon icon-6-10 " title="Corotondo"></i></li>
+													</ul>
+					</div>
+				</li>
+								<li>
+					<h4 style="color: #006D99">Nove Passi</h4>
+					<p class="indirizzo"><i class="fa fa-map-marker"></i>Via Cesare da Sesto 5</p>
+					<p class="trasporto"><i class="icon icon-bus"></i>(MM2 St. Agostino)</p>
+					<div class="corsi">
+						<ul class="inline-list">
+														<li><i class="icon icon-0-3 " title="Musilieu 0-3"></i></li>
+														<li><i class="icon icon-3-6 " title="Musilieu 3-6"></i></li>
+														<li><i class="icon icon-6-10  disabilitato " title="Corotondo"></i></li>
 													</ul>
 					</div>
 				</li>
@@ -156,6 +168,18 @@
 														<li><i class="icon icon-0-3 " title="Musilieu 0-3"></i></li>
 														<li><i class="icon icon-3-6 " title="Musilieu 3-6"></i></li>
 														<li><i class="icon icon-6-10 " title="Corotondo"></i></li>
+													</ul>
+					</div>
+				</li>
+								<li>
+					<h4 style="color: #C92228">The Milk Bar</h4>
+					<p class="indirizzo"><i class="fa fa-map-marker"></i>Conca del Naviglio 5</p>
+					<p class="trasporto"><i class="icon icon-bus"></i>(MM S.Ambrogio, bus 94)</p>
+					<div class="corsi">
+						<ul class="inline-list">
+														<li><i class="icon icon-0-3 " title="Musilieu 0-3"></i></li>
+														<li><i class="icon icon-3-6  disabilitato " title="Musilieu 3-6"></i></li>
+														<li><i class="icon icon-6-10  disabilitato " title="Corotondo"></i></li>
 													</ul>
 					</div>
 				</li>
@@ -200,9 +224,22 @@ L.mapbox.featureLayer({
   },
   properties: {
     title: 'Il germoglio',
-    description: 'Via Lanzone 6<br /><small>(MM2 St. Ambrogio)</small>',
+    description: 'Via Lanzone 53<br /><small>(MM2 St. Ambrogio)</small>',
     'marker-size': 'medium',
     'marker-color': '#750099'
+  }
+}).addTo(map);
+L.mapbox.featureLayer({
+  type: 'Feature',
+  geometry: {
+    type: 'Point',
+    coordinates: [9.173334, 45.457208]
+  },
+  properties: {
+    title: 'Nove Passi',
+    description: 'Via Cesare da Sesto 5<br /><small>(MM2 St. Agostino)</small>',
+    'marker-size': 'medium',
+    'marker-color': '#006D99'
   }
 }).addTo(map);
 L.mapbox.featureLayer({
@@ -229,6 +266,19 @@ L.mapbox.featureLayer({
     description: 'Via Spartaco 29 ang. Via Paullo 16<br /><small>(Tram 9, bus 84 o 62)</small>',
     'marker-size': 'medium',
     'marker-color': '#6FAA00'
+  }
+}).addTo(map);
+L.mapbox.featureLayer({
+  type: 'Feature',
+  geometry: {
+    type: 'Point',
+    coordinates: [9.177943, 45.458036]
+  },
+  properties: {
+    title: 'The Milk Bar',
+    description: 'Conca del Naviglio 5<br /><small>(MM S.Ambrogio, bus 94)</small>',
+    'marker-size': 'medium',
+    'marker-color': '#C92228'
   }
 }).addTo(map);
 L.mapbox.featureLayer({
