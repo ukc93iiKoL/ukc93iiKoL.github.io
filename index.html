@@ -195,6 +195,18 @@
 													</ul>
 					</div>
 				</li>
+								<li>
+					<h4 style="color: #486D00">Pistacchio e nocciolina</h4>
+					<p class="indirizzo"><i class="fa fa-map-marker"></i>Via M. Gioia 61</p>
+					<p class="trasporto"><i class="icon icon-bus"></i>(MM3 Sondrio; MM2 Gioia)</p>
+					<div class="corsi">
+						<ul class="inline-list">
+														<li><i class="icon icon-0-3 " title="Musilieu 0-3"></i></li>
+														<li><i class="icon icon-3-6 " title="Musilieu 3-6"></i></li>
+														<li><i class="icon icon-6-10 " title="Corotondo"></i></li>
+													</ul>
+					</div>
+				</li>
 							</ul>
 		</div>
 	</div>
@@ -292,6 +304,19 @@ L.mapbox.featureLayer({
     description: 'Via Morgantini 14<br /><small>(Bus 49 e 95)</small>',
     'marker-size': 'medium',
     'marker-color': '#55ACEE'
+  }
+}).addTo(map);
+L.mapbox.featureLayer({
+  type: 'Feature',
+  geometry: {
+    type: 'Point',
+    coordinates: [9.199531, 45.488485]
+  },
+  properties: {
+    title: 'Pistacchio e nocciolina',
+    description: 'Via M. Gioia 61<br /><small>(MM3 Sondrio; MM2 Gioia)</small>',
+    'marker-size': 'medium',
+    'marker-color': '#486D00'
   }
 }).addTo(map);
 </script>
