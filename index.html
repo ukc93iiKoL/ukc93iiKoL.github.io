@@ -136,9 +136,9 @@
 					</div>
 				</li>
 								<li>
-					<h4 style="color: #486D00">Chez Aua</h4>
-					<p class="indirizzo"><i class="fa fa-map-marker"></i>Via M. Gioia 63</p>
-					<p class="trasporto"><i class="icon icon-bus"></i>(MM3 Sondrio; MM2 Gioia)</p>
+					<h4 style="color: #55ACEE">Casa di maternità</h4>
+					<p class="indirizzo"><i class="fa fa-map-marker"></i>Via Morgantini 14</p>
+					<p class="trasporto"><i class="icon icon-bus"></i>(Bus 49 e 95)</p>
 					<div class="corsi">
 						<ul class="inline-list">
 														<li><i class="icon icon-0-3 " title="Musilieu 0-3"></i></li>
@@ -175,18 +175,6 @@
 					<h4 style="color: #C92228">The Milk Bar</h4>
 					<p class="indirizzo"><i class="fa fa-map-marker"></i>Conca del Naviglio 5</p>
 					<p class="trasporto"><i class="icon icon-bus"></i>(MM S.Ambrogio, bus 94)</p>
-					<div class="corsi">
-						<ul class="inline-list">
-														<li><i class="icon icon-0-3 " title="Musilieu 0-3"></i></li>
-														<li><i class="icon icon-3-6 " title="Musilieu 3-6"></i></li>
-														<li><i class="icon icon-6-10  disabilitato " title="Corotondo"></i></li>
-													</ul>
-					</div>
-				</li>
-								<li>
-					<h4 style="color: #55ACEE">Casa di maternità</h4>
-					<p class="indirizzo"><i class="fa fa-map-marker"></i>Via Morgantini 14</p>
-					<p class="trasporto"><i class="icon icon-bus"></i>(Bus 49 e 95)</p>
 					<div class="corsi">
 						<ul class="inline-list">
 														<li><i class="icon icon-0-3 " title="Musilieu 0-3"></i></li>
@@ -233,13 +221,13 @@ L.mapbox.featureLayer({
   type: 'Feature',
   geometry: {
     type: 'Point',
-    coordinates: [9.1996858, 45.4887221]
+    coordinates: [9.134221, 45.47021]
   },
   properties: {
-    title: 'Chez Aua',
-    description: 'Via M. Gioia 63<br /><small>(MM3 Sondrio; MM2 Gioia)</small>',
+    title: 'Casa di maternità',
+    description: 'Via Morgantini 14<br /><small>(Bus 49 e 95)</small>',
     'marker-size': 'medium',
-    'marker-color': '#486D00'
+    'marker-color': '#55ACEE'
   }
 }).addTo(map);
 L.mapbox.featureLayer({
@@ -279,19 +267,6 @@ L.mapbox.featureLayer({
     description: 'Conca del Naviglio 5<br /><small>(MM S.Ambrogio, bus 94)</small>',
     'marker-size': 'medium',
     'marker-color': '#C92228'
-  }
-}).addTo(map);
-L.mapbox.featureLayer({
-  type: 'Feature',
-  geometry: {
-    type: 'Point',
-    coordinates: [9.134221, 45.47021]
-  },
-  properties: {
-    title: 'Casa di maternità',
-    description: 'Via Morgantini 14<br /><small>(Bus 49 e 95)</small>',
-    'marker-size': 'medium',
-    'marker-color': '#55ACEE'
   }
 }).addTo(map);
 </script>
