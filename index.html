@@ -136,7 +136,7 @@
 					</div>
 				</li>
 								<li>
-					<h4 style="color: #55ACEE">Casa di maternità</h4>
+					<h4 style="color: #55ACEE">Casa Maternità "La Via Lattea"</h4>
 					<p class="indirizzo"><i class="fa fa-map-marker"></i>Via Morgantini 14</p>
 					<p class="trasporto"><i class="icon icon-bus"></i>(Bus 49 e 95)</p>
 					<div class="corsi">
@@ -174,12 +174,21 @@
 								<li>
 					<h4 style="color: #C92228">The Milk Bar</h4>
 					<p class="indirizzo"><i class="fa fa-map-marker"></i>Conca del Naviglio 5</p>
-					<p class="trasporto"><i class="icon icon-bus"></i>(MM S.Ambrogio, bus 94)</p>
+					<p class="trasporto"><i class="icon icon-bus"></i>(MM2 S.Ambrogio, bus 94)</p>
 					<div class="corsi">
 						<ul class="inline-list">
 														<li><i class="icon icon-0-3 " title="Musilieu 0-3"></i></li>
 														<li><i class="icon icon-3-6 " title="Musilieu 3-6"></i></li>
 														<li><i class="icon icon-6-10  disabilitato " title="Corotondo"></i></li>
+													</ul>
+					</div>
+				</li>
+								<li>
+					<h4 style="color: #006D99">BHU-M Milano</h4>
+					<p class="indirizzo"><i class="fa fa-map-marker"></i>Via Domenichino 38</p>
+					<p class="trasporto"><i class="icon icon-bus"></i>(MM1 Amendola)</p>
+					<div class="corsi">
+						<ul class="inline-list">
 													</ul>
 					</div>
 				</li>
@@ -224,7 +233,7 @@ L.mapbox.featureLayer({
     coordinates: [9.134221, 45.47021]
   },
   properties: {
-    title: 'Casa di maternità',
+    title: 'Casa Maternità "La Via Lattea"',
     description: 'Via Morgantini 14<br /><small>(Bus 49 e 95)</small>',
     'marker-size': 'medium',
     'marker-color': '#55ACEE'
@@ -264,9 +273,22 @@ L.mapbox.featureLayer({
   },
   properties: {
     title: 'The Milk Bar',
-    description: 'Conca del Naviglio 5<br /><small>(MM S.Ambrogio, bus 94)</small>',
+    description: 'Conca del Naviglio 5<br /><small>(MM2 S.Ambrogio, bus 94)</small>',
     'marker-size': 'medium',
     'marker-color': '#C92228'
+  }
+}).addTo(map);
+L.mapbox.featureLayer({
+  type: 'Feature',
+  geometry: {
+    type: 'Point',
+    coordinates: [9.14809, 45.472711]
+  },
+  properties: {
+    title: 'BHU-M Milano',
+    description: 'Via Domenichino 38<br /><small>(MM1 Amendola)</small>',
+    'marker-size': 'medium',
+    'marker-color': '#006D99'
   }
 }).addTo(map);
 </script>
